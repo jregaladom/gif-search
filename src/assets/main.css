@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+body{
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.header{
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+.main{
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.seach-bar{
+  display: grid;
+  grid-template-columns: 90% auto;
+}
+
+
+.search-input{
+  height: 35px;
+  border: none;
+  font-size: 24px;
+  color: #4F4F4F;
+}
+
+.search-input:focus {
+  border: none;
+  outline: none;
+}
+
+.search-button {
+  background: transparent;
+  border: none;
+  text-align: center;
+}
+
+.search-button svg {
+  width: 35px;
+  height: 35px;
+}
+
+.grid-container {
+  margin-top: 30px;
+  column-count: 1;
+  column-gap: 20px;
+  width: 100%;
+}
+
+.grid-item {
+  overflow: hidden;
+  padding: 10px 0px 10px 0px;
+}
+
+.grid-item img {
+  width: 100%; 
+  height: auto;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    margin-top: 30px;
+    column-count: 2;
+    column-gap: 20px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+  margin-top: 30px;
+  column-count: 3;
+  column-gap: 20px;
+  width: 100%;
+  }
+}
